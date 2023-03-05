@@ -33,8 +33,8 @@ class BoolVar:
         return format(str(self), format_spec)
 
 
-# infunc = input('Enter your function: ')
-infunc = '((a=b)=c)'
+infunc = input('Enter your function: ')
+# infunc = '((a=b)=c)'
 
 infunc = infunc.replace("=", "==")
 infunc = infunc.replace('>', '<=')
@@ -94,7 +94,7 @@ for form in disjunctive_normal_form_safe:
 print()
 print(''.join(tmp_variable[:-2]))
 
-
+print()
 print('Conjunctive_normal_form')
 tmp_variable = ''
 for form in conjunctive_normal_form:
