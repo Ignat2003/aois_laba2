@@ -31,6 +31,8 @@ for variant in range(1 << len(variables)):
         print(f" {vars_for_eval[key]:<5}", end=" |")
     # вычисляем результат
     infunc = infunc.replace('-', 'not ')
+    infunc = infunc.replace('+', ' or ')
+
     func = infunc[:]
     for variable, is_true in vars_for_eval.items():
         is_true = str(bool(is_true))
